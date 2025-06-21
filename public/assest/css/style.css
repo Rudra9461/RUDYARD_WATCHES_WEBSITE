@@ -1,0 +1,237 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.body{
+	font-family: "Gill Sans", sans-serif !important;
+}
+
+/* Navbar Section Start */
+.top-menu-link{
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px !important;
+	text-transform:capitalize ;
+	margin-right: 20px;
+}
+.top-menu-link:hover{
+	color:lightseagreen;
+}
+.navbar-brand img{
+	width: 100px;
+}
+
+.login-button{
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(186,145,40,1) 41%, rgba(0,212,255,1) 100%);
+	border: none;
+	margin-right: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.login-button:hover{
+	background: rgb(196,91,91);
+background: linear-gradient(90deg, rgba(196,91,91,1) 6%, rgba(186,145,40,1) 41%, rgba(0,212,255,1) 100%);
+}
+
+.bg-info{
+	background-color:  #d6a323 !important;
+}
+/* Navbar Section End */
+
+
+/* Slider Section Start */
+
+.slider-height{
+	height: 700px;
+	object-fit: cover;
+	box-shadow: 3px 3px 3px 3px lightgray; ;
+}
+
+/*.slider-height:hover{
+	border-image: linear;
+}*/
+
+/* Slider Section End*/
+
+/* premium-watch-collection-section Start */
+
+.premium-watch-collection-section{
+	width: 100%;
+	height: auto;
+	margin: 30px 0px;
+}
+.premium-watch-collection-content{
+	width: 100%;
+	height: auto;
+}
+.heading-setion h2{
+	font-family: "Gill Sans", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 20px;
+	background: transparent !important;
+/*	padding-top: 0px !important;*/
+}
+.premium-watch-collection-content p{
+	font-size: 18px;
+	font-family: "Gill Sans", sans-serif;
+	text-align: justify;
+	font-weight: 400;
+}
+
+/* premium-watch-collection-section End */
+
+
+/* some-master-section Start */
+
+.some-master-section{
+	width: 100%;
+	height: auto;
+	background: rgb(191,163,93);
+	background: linear-gradient(90deg, rgba(191,163,93,1) 6%, rgba(205,164,59,1) 48%, rgba(138,105,20,1) 100%);
+	padding:30px 0px;
+
+}
+.title{
+	font-size: 20px;
+}
+.card{
+	border-radius: 10px;
+	width: 100%;
+}
+.card-image{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/* some-master-section End */
+
+
+/*table for watches Start */
+.table-head-content{
+	font-size: 30px;
+	font-family: "Gill Sans", sans-serif;
+}
+.table-body-content{
+	font-size: 20px;
+	font-family: "Gill Sans", sans-serif;
+}
+.content{
+	font-size:25px;
+	padding: 10px;
+	text-align: center;
+	font-family: cursive;
+}
+
+/*table for watches End */
+
+/* footer content start */
+.footer-logo{
+	padding: 10px;
+}
+.footer-description{
+	font-size: 20px;
+	font-family: "Gill Sans", sans-serif;
+}
+.footer-data{
+	color:cyan;
+	padding:5px;
+	font-size: 25px;
+	text-decoration: underline;
+}
+.footer-data:hover{
+	color: orangered;
+}
+.dropdown-item{
+	color:darkblue;
+	font-size:20px;
+}
+.dropdown-item:hover{
+	color: indianred;
+}
+.footer-items{
+    font-size: 18px;
+    color: black !important;
+    padding: 10px;
+    display: inline-block;
+
+}
+.footer-items:hover{
+	color:orangered !important;
+}
+.btn-contact{
+	width:auto;
+	height:50px;
+	color: cadetblue;
+	
+}
+.footer-icons{
+	color:blue;
+	font-size: 40px;
+}
+
+/* footer content End */
+
+
+/* About Us page Start */
+
+.main_heading{
+	background: #c8c3cc;
+    text-align: center;
+    font-size: 30px;
+    height: 130px;
+}
+
+.AboutUs_content{
+	background: #f6d8ac	;
+	font-family: "Gill Sans", sans-serif;
+
+}
+
+/* About Us page End */
+
+
+/* HELP & CONTACT page Start */
+.page_heading{
+	background: #98b2ce;
+	text-align: center;
+	font-size: 30px;
+} 
+
+.icon{
+	width:200px;
+	height: 50px;
+	font-family: "Gill Sans", sans-serif;
+	text-align: center;
+	
+}
+/* HELP & CONTACT page End */
+
+/*terms_and_condition page START */
+.main_heading{
+	background: #c8c3cc;
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+}
+
+.terms{
+	font-family: "Gill Sans", sans-serif;	
+}
+.terms:hover{
+	color: #20d1d8;
+}
+.collapse{
+	font-family: "Gill Sans", sans-serif;
+}
+.collapse:hover{
+	color:#183ad8;
+}
+
+/*terms_and_condition page ENDS */
