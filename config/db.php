@@ -1,7 +1,5 @@
 <?php
-// IMPORTANT: Replace 'YOUR_PASSWORD_HERE' with your actual MySQL root password
-$conn = new mysqli('localhost', 'root', 'Rudra@1234', 'rudyard_watches');
-
+$conn = new mysqli('sql107.infinityfree.com', 'if0_42170791', '04102005Rudra', 'if0_42170791_rudyard');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
