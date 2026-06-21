@@ -480,17 +480,24 @@
   });
 
   // ── SUCCESS TOAST after registration redirect ───────────
-  if (window.location.search.includes('registered=1')) {
-    window.addEventListener('load', function() {
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var isRegistered = params.get('registered') === '1';
+  var isLoggedIn    = params.get('login') === '1';
+
+  if (isRegistered || isLoggedIn) {
+    window.addEventListener('load', function () {
       var toast = document.createElement('div');
       toast.style.cssText = 'position:fixed;top:24px;right:24px;z-index:9999;background:#4caf87;color:#fff;padding:16px 24px;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;font-weight:500;box-shadow:0 8px 30px rgba(0,0,0,0.2);';
-      toast.textContent = '✓ Registration successful! Welcome to Rudyard Watches.';
+      toast.textContent = isRegistered
+        ? '✓ Registration successful! Welcome to Rudyard Watches.'
+        : '✓ Login successful! Welcome back.';
       document.body.appendChild(toast);
-      setTimeout(function() { toast.remove(); }, 5000);
+      setTimeout(function () { toast.remove(); }, 5000);
       window.history.replaceState({}, '', 'index.html');
     });
   }
-
+})();
 </script>
 </body>
 </html>

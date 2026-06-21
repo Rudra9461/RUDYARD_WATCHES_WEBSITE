@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In — Rudyard Watches</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assest/css/style.css">
+</head>
+<body>
+
+<div class="rw-form-page">
+  <div class="rw-form-card">
+    <h1 class="rw-form-title">Welcome Back</h1>
+    <p class="rw-form-subtitle">Sign in to your Rudyard Watches account</p>
+    <div class="rw-form-rule"></div>
+
+    <div id="loginError" class="rw-error d-none" style="text-align:center;font-size:14px;margin-bottom:18px;"></div>
+
+    <form action="login.php" method="POST" id="loginForm" novalidate>
+
+      <div class="rw-field">
+        <label class="rw-label" for="email">Email Address</label>
+        <input type="email" class="rw-input" id="email" name="email" placeholder="you@example.com" required>
+        <span class="rw-error" id="emailError"></span>
+      </div>
+
+      <div class="rw-field">
+        <label class="rw-label" for="password">Password</label>
+        <input type="password" class="rw-input" id="password" name="password" placeholder="••••••••" required>
+        <span class="rw-error" id="passwordError"></span>
+      </div>
+
+      <button type="submit" class="rw-submit-btn" id="submitBtn">Sign In</button>
+
+      <p style="text-align:center;margin-top:22px;font-size:13px;color:var(--muted);">
+        Don't have an account?
+        <a href="form.html" style="color:var(--gold);text-decoration:none;font-weight:600;">Create one</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var err = params.get('error');
+    if (err) {
+      var box = document.getElementById('loginError');
+      box.classList.remove('d-none');
+      box.textContent = err === 'invalid'
+        ? 'Incorrect email or password. Please try again.'
+        : 'Something went wrong. Please try again.';
+    }
+  })();
+
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var emailErr = document.getElementById('emailError');
+    var passErr = document.getElementById('passwordError');
+    var valid = true;
+
+    emailErr.textContent = '';
+    passErr.textContent = '';
+    email.classList.remove('is-invalid');
+    password.classList.remove('is-invalid');
+
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+      emailErr.textContent = 'Enter a valid email address.';
+      email.classList.add('is-invalid');
+      valid = false;
+    }
+    if (!password.value) {
+      passErr.textContent = 'Password is required.';
+      password.classList.add('is-invalid');
+      valid = false;
+    }
+    if (!valid) e.preventDefault();
+  });
+</script>
+
+</body>
+</html>
