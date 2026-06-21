@@ -490,6 +490,16 @@ $priceListItems = array_slice($products, 4);
       });
     }
   })();
+
+  <?php if (isset($_SESSION['cart_message'])): ?>
+  window.addEventListener('load', function () {
+    var toast = document.createElement('div');
+    toast.style.cssText = 'position:fixed;top:24px;right:24px;z-index:9999;background:#4caf87;color:#fff;padding:16px 24px;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;font-weight:500;box-shadow:0 8px 30px rgba(0,0,0,0.2);';
+    toast.textContent = <?= json_encode($_SESSION['cart_message']) ?>;
+    document.body.appendChild(toast);
+    setTimeout(function () { toast.remove(); }, 3000);
+  });
+  <?php unset($_SESSION['cart_message']); endif; ?>
 </script>
 </body>
 </html>

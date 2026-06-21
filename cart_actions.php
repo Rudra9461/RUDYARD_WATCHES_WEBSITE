@@ -31,6 +31,7 @@ switch ($action) {
                 } else {
                     $_SESSION['cart'][$product_id] = 1;
                 }
+                $_SESSION['cart_message'] = '✓ Added to cart!';
             }
             $stmt->close();
         }
