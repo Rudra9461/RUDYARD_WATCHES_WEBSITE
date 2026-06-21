@@ -71,6 +71,15 @@ body {
   background: var(--gold-light);
   transform: translateY(-1px);
 }
+.rw-signup-btn {
+  background: transparent;
+  color: var(--gold) !important;
+  border: 2px solid var(--gold);
+}
+.rw-signup-btn:hover {
+  background: var(--gold);
+  color: var(--navy) !important;
+}
 
 /* ── HERO ────────────────────────────────────────────────── */
 .rw-hero-img {
