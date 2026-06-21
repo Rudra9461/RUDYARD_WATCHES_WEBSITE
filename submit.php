@@ -47,7 +47,7 @@ $stmt = $conn->prepare(
 $stmt->bind_param("sssssss", $fname, $lname, $contact, $email, $hashed, $address, $pin_code);
 
 if ($stmt->execute()) {
-    header('Location: index.html?registered=1');
+    header('Location: index.php?registered=1');
     exit;
 } else {
     echo "<script>alert('Something went wrong. Please try again.'); window.history.back();</script>";

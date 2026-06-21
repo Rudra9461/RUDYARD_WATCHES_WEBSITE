@@ -16,6 +16,7 @@
     <p class="rw-form-subtitle">Sign in to your Rudyard Watches account</p>
     <div class="rw-form-rule"></div>
 
+    <!-- Error banner shown only if login.php redirects back with ?error=1 -->
     <div id="loginError" class="rw-error d-none" style="text-align:center;font-size:14px;margin-bottom:18px;"></div>
 
     <form action="login.php" method="POST" id="loginForm" novalidate>
@@ -43,18 +44,24 @@
 </div>
 
 <script>
+  // Show server-side error passed back via redirect (?error=invalid)
   (function () {
     var params = new URLSearchParams(window.location.search);
     var err = params.get('error');
     if (err) {
       var box = document.getElementById('loginError');
       box.classList.remove('d-none');
-      box.textContent = err === 'invalid'
-        ? 'Incorrect email or password. Please try again.'
-        : 'Something went wrong. Please try again.';
+      if (err === 'invalid') {
+        box.textContent = 'Incorrect email or password. Please try again.';
+      } else if (err === 'loginrequired') {
+        box.textContent = 'Please sign in to add items to your cart.';
+      } else {
+        box.textContent = 'Something went wrong. Please try again.';
+      }
     }
   })();
 
+  // Lightweight client-side check before submit (server still re-validates everything)
   document.getElementById('loginForm').addEventListener('submit', function (e) {
     var email = document.getElementById('email');
     var password = document.getElementById('password');

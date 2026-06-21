@@ -39,6 +39,6 @@ $_SESSION['lname']   = $user['lname'];
 $stmt->close();
 $conn->close();
 
-header('Location: index.html?login=1');
+header('Location: index.php?login=1');
 exit;
 ?>
