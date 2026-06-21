@@ -44,7 +44,7 @@ A fully responsive men's watch e-commerce website built as a 1st year internship
 | Frontend | Backend | Database | Payments | Hosting |
 |---|---|---|---|---|
 | HTML5, CSS3 | PHP 8.x | MySQL | Razorpay REST API (test mode) | InfinityFree |
-| Bootstrap 5.3 | mysqli (prepared statements) | | | |
+| Bootstrap 5.3 | mysqli (prepared statements) | | | |git add -A
 | JavaScript (jQuery) | | | | |
 
 ---
