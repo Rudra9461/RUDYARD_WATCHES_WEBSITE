@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,500 +8,576 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assest/css/style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark rw-nav sticky-top">
-  <div class="container-fluid px-4">
-    <a href="index.html" class="navbar-brand">
-      <img src="assest/images/images-removebg-preview.png" height="52" alt="Rudyard Watches">
-    </a>
-    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark rw-nav sticky-top">
+    <div class="container-fluid px-4">
+      <a href="index.html" class="navbar-brand">
+        <img src="assest/images/images-removebg-preview.png" height="52" alt="Rudyard Watches">
+      </a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a href="#collection" class="nav-link rw-nav-link">Watches</a></li>
+          <li class="nav-item"><a href="#collection" class="nav-link rw-nav-link">Smart Watches</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link rw-nav-link">Gifting</a></li>
+          <li class="nav-item"><a href="#" class="nav-link rw-nav-link">More</a></li>
+          <li class="nav-item"><a href="#aboutus" class="nav-link rw-nav-link">About Us</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="login.html" class="rw-signin-btn">Sign In</a>
+          <a href="form.html" class="rw-signin-btn rw-signup-btn">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assest/images/watch.jpg" class="d-block w-100 rw-hero-img" alt="Hero Watch">
+        <div class="carousel-caption rw-hero-caption">
+          <p class="rw-hero-eyebrow">New Arrival</p>
+          <h1 class="rw-hero-title">Time, Crafted.</h1>
+          <a href="#collection" class="rw-hero-btn">Explore Collection</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assest/images/watch6.jpg" class="d-block w-100 rw-hero-img" alt="Watch 2">
+        <div class="carousel-caption rw-hero-caption">
+          <p class="rw-hero-eyebrow">Premium Series</p>
+          <h1 class="rw-hero-title">Wear the Legend.</h1>
+          <a href="#collection" class="rw-hero-btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assest/images/ducati-corse.jpg" class="d-block w-100 rw-hero-img" alt="Ducati Corse Watch">
+        <div class="carousel-caption rw-hero-caption">
+          <p class="rw-hero-eyebrow">Racing Heritage</p>
+          <h1 class="rw-hero-title">Built for Speed.</h1>
+          <a href="#collection" class="rw-hero-btn">Discover More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav mx-auto gap-1">
-        <li class="nav-item"><a href="#collection" class="nav-link rw-nav-link">Watches</a></li>
-        <li class="nav-item"><a href="#collection" class="nav-link rw-nav-link">Smart Watches</a></li>
-        <li class="nav-item"><a href="#pricing" class="nav-link rw-nav-link">Gifting</a></li>
-        <li class="nav-item"><a href="#" class="nav-link rw-nav-link">More</a></li>
-        <li class="nav-item"><a href="#aboutus" class="nav-link rw-nav-link">About Us</a></li>
-      </ul>
-<div class="d-flex gap-2">
-  <a href="login.html" class="rw-signin-btn">Sign In</a>
-  <a href="form.html" class="rw-signin-btn rw-signup-btn">Sign Up</a>
-</div>
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-</nav>
 
-<!-- HERO CAROUSEL -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assest/images/watch.jpg" class="d-block w-100 rw-hero-img" alt="Hero Watch">
-      <div class="carousel-caption rw-hero-caption">
-        <p class="rw-hero-eyebrow">New Arrival</p>
-        <h1 class="rw-hero-title">Time, Crafted.</h1>
-        <a href="#collection" class="rw-hero-btn">Explore Collection</a>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assest/images/watch6.jpg" class="d-block w-100 rw-hero-img" alt="Watch 2">
-      <div class="carousel-caption rw-hero-caption">
-        <p class="rw-hero-eyebrow">Premium Series</p>
-        <h1 class="rw-hero-title">Wear the Legend.</h1>
-        <a href="#collection" class="rw-hero-btn">Shop Now</a>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assest/images/titan-black.jpg" class="d-block w-100 rw-hero-img" alt="Titan Watch">
-      <div class="carousel-caption rw-hero-caption">
-        <p class="rw-hero-eyebrow">Titan Edition</p>
-        <h1 class="rw-hero-title">Bold by Design.</h1>
-        <a href="#collection" class="rw-hero-btn">Discover More</a>
+  <!-- BRAND STRIP -->
+  <div class="rw-brand-strip">
+    <div class="container">
+      <div class="rw-brand-strip-inner">
+        <span>ROLEX</span><span class="rw-dot">◆</span>
+        <span>TITAN</span><span class="rw-dot">◆</span>
+        <span>FASTRACK</span><span class="rw-dot">◆</span>
+        <span>boAt</span><span class="rw-dot">◆</span>
+        <span>TIMEX</span><span class="rw-dot">◆</span>
+        <span>FOSSIL</span>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
 
-<!-- BRAND STRIP -->
-<div class="rw-brand-strip">
-  <div class="container">
-    <div class="rw-brand-strip-inner">
-      <span>ROLEX</span><span class="rw-dot">◆</span>
-      <span>TITAN</span><span class="rw-dot">◆</span>
-      <span>FASTRACK</span><span class="rw-dot">◆</span>
-      <span>boAt</span><span class="rw-dot">◆</span>
-      <span>TIMEX</span><span class="rw-dot">◆</span>
-      <span>FOSSIL</span>
-    </div>
-  </div>
-</div>
-
-<!-- PREMIUM COLLECTION — FLIP CARDS -->
-<section class="rw-section" id="about">
-  <div class="container">
-    <div class="rw-section-header">
-      <p class="rw-eyebrow">Our Philosophy</p>
-      <h2 class="rw-section-title">Premium Collection of Watches</h2>
-    </div>
-    <p class="rw-section-lead">Your watch collection tells your story. At Rudyard Watches, we craft a personalized journey — helping you acquire investment-worthy timepieces that enhance your style and secure your financial future.</p>
-
-    <div class="rw-flip-grid">
-      <div class="rw-flip-card">
-        <div class="rw-flip-inner">
-          <div class="rw-flip-front">
-            <span class="rw-flip-icon">◈</span>
-            <h5 class="rw-flip-title">The Luxury Collection</h5>
-            <p class="rw-flip-hint">Click to know more</p>
-          </div>
-          <div class="rw-flip-back">
-            <h5 class="rw-flip-back-title">The Luxury Collection</h5>
-            <p>A luxury watch is crafted by skilled artisans using higher-grade materials, and subjected to a multitude of quality control tests. The intrinsic value translates into reliable precision and exceptional build quality.</p>
-          </div>
-        </div>
+  <!-- PREMIUM COLLECTION — FLIP CARDS -->
+  <section class="rw-section" id="about">
+    <div class="container">
+      <div class="rw-section-header">
+        <p class="rw-eyebrow">Our Philosophy</p>
+        <h2 class="rw-section-title">Premium Collection of Watches</h2>
       </div>
+      <p class="rw-section-lead">Your watch collection tells your story. At Rudyard Watches, we craft a personalized
+        journey — helping you acquire investment-worthy timepieces that enhance your style and secure your financial
+        future.</p>
 
-      <div class="rw-flip-card">
-        <div class="rw-flip-inner">
-          <div class="rw-flip-front">
-            <span class="rw-flip-icon">◈</span>
-            <h5 class="rw-flip-title">The Premium Shines</h5>
-            <p class="rw-flip-hint">Click to know more</p>
-          </div>
-          <div class="rw-flip-back">
-            <h5 class="rw-flip-back-title">The Premium Shines</h5>
-            <p>Never miss the opportunity to shine. Discover new technology in tradition and high elegance — where every second hand sweep is a statement.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="rw-flip-card">
-        <div class="rw-flip-inner">
-          <div class="rw-flip-front">
-            <span class="rw-flip-icon">◈</span>
-            <h5 class="rw-flip-title">The Aesthetic Collection</h5>
-            <p class="rw-flip-hint">Click to know more</p>
-          </div>
-          <div class="rw-flip-back">
-            <h5 class="rw-flip-back-title">The Aesthetic Collection</h5>
-            <p>From color palette and bracelet design to the often-overlooked element of proportion — every detail is an intentional design decision that makes a watch truly yours.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MASTERPIECES / PRODUCT CARDS -->
-<section class="rw-section rw-section-dark" id="collection">
-  <div class="container">
-    <div class="rw-section-header">
-      <p class="rw-eyebrow rw-eyebrow-gold">Featured Pieces</p>
-      <h2 class="rw-section-title rw-title-light">Masterpieces to Explore</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6">
-        <div class="rw-product-card">
-          <div class="rw-product-img-wrap">
-            <img src="assest/images/titan-black.jpg" alt="Titan Watch">
-            <div class="rw-product-overlay">
-              <a href="https://www.titan.co.in" target="_blank" class="rw-overlay-btn">View Details</a>
+      <div class="rw-flip-grid">
+        <div class="rw-flip-card">
+          <div class="rw-flip-inner">
+            <div class="rw-flip-front">
+              <span class="rw-flip-icon">◈</span>
+              <h5 class="rw-flip-title">The Luxury Collection</h5>
+              <p class="rw-flip-hint">Click to know more</p>
+            </div>
+            <div class="rw-flip-back">
+              <h5 class="rw-flip-back-title">The Luxury Collection</h5>
+              <p>A luxury watch is crafted by skilled artisans using higher-grade materials, and subjected to a
+                multitude of quality control tests. The intrinsic value translates into reliable precision and
+                exceptional build quality.</p>
             </div>
           </div>
-          <div class="rw-product-body">
-            <p class="rw-product-brand">Titan</p>
-            <h5 class="rw-product-name">Octane Chronograph</h5>
-            <p class="rw-product-desc">Best Product Design award by Red Dot 2014. Bold, precise, built for men who lead.</p>
-            <a href="https://www.titan.co.in" target="_blank" class="rw-product-link">Info <i class="fa fa-arrow-right"></i></a>
-          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="rw-product-card">
-          <div class="rw-product-img-wrap">
-            <img src="assest/images/rolex-white.jpg" alt="Rolex Watch">
-            <div class="rw-product-overlay">
-              <a href="https://www.rolex.com" target="_blank" class="rw-overlay-btn">View Details</a>
-            </div>
-          </div>
-          <div class="rw-product-body">
-            <p class="rw-product-brand">Rolex</p>
-            <h5 class="rw-product-name">SEA-Dweller Oyster</h5>
-            <p class="rw-product-desc">43mm Oystersteel M126600-0002. Three watch lines — Oyster Perpetual, Professional and Cellini.</p>
-            <a href="https://www.rolex.com" target="_blank" class="rw-product-link">Info <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="rw-product-card">
-          <div class="rw-product-img-wrap">
-            <img src="assest/images/boat-black.jpg" alt="boAt Watch">
-            <div class="rw-product-overlay">
-              <a href="https://www.boat-lifestyle.com" target="_blank" class="rw-overlay-btn">View Details</a>
-            </div>
-          </div>
-          <div class="rw-product-body">
-            <p class="rw-product-brand">boAt</p>
-            <h5 class="rw-product-name">Enigma Z30 Smart</h5>
-            <p class="rw-product-desc">1.39" TFT Display, Bluetooth Calling, 100+ Watch Faces, metal body. Style meets tech.</p>
-            <a href="https://www.boat-lifestyle.com" target="_blank" class="rw-product-link">Info <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="rw-product-card">
-          <div class="rw-product-img-wrap">
-            <img src="assest/images/fastrack-white.jpg" alt="Fastrack Watch">
-            <div class="rw-product-overlay">
-              <a href="https://www.fastrack.in" target="_blank" class="rw-overlay-btn">View Details</a>
-            </div>
-          </div>
-          <div class="rw-product-body">
-            <p class="rw-product-brand">Fastrack</p>
-            <h5 class="rw-product-name">Minimalist Analog</h5>
-            <p class="rw-product-desc">Chronograph, Moon Phase, stainless steel, waterproof luminous hands. Built for the bold.</p>
-            <a href="https://www.fastrack.in" target="_blank" class="rw-product-link">Info <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- PRICE TABLE -->
-<section class="rw-section" id="pricing">
-  <div class="container">
-    <div class="rw-section-header">
-      <p class="rw-eyebrow">Transparent Pricing</p>
-      <h2 class="rw-section-title">Watches for Men — Price List</h2>
-    </div>
-    <p class="rw-section-lead">The right timepiece at the right price. Browse our curated list and find the one that suits your wrist and wallet.</p>
-    <div class="rw-search-wrap">
-      <i class="fa fa-search rw-search-icon"></i>
-      <input type="text" id="watchSearch" class="rw-search-input" placeholder="Search by brand or model…">
-    </div>
-    <div class="table-responsive">
-      <table class="table rw-table" id="priceTable">
-        <thead>
-          <tr>
-            <th>Watch Model</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody id="priceTableBody">
-          <tr><td>DUCATI CORSE — Analog Watch DTWGC2019010</td><td class="rw-price">₹35,698</td></tr>
-          <tr><td>LIMESTONE — Day &amp; Date Steel Strap Quartz Analog</td><td class="rw-price">₹3,000</td></tr>
-          <tr><td>FOSSIL — GRANT SPORT Analog Watch</td><td class="rw-price">₹4,699</td></tr>
-          <tr><td>Titan — Edge Ceramic Quartz Glossy Green Dial</td><td class="rw-price">₹31,495</td></tr>
-          <tr><td>TIMEX — Classic Analog Watch</td><td class="rw-price">₹5,790</td></tr>
-          <tr><td>Titan — Gents Karishma Analog Watch</td><td class="rw-price">₹3,445</td></tr>
-          <tr><td>Fastrack — Minimalists Analog Watch</td><td class="rw-price">₹8,950</td></tr>
-          <tr><td>EMPORIO ARMANI — Diver Analog Watch</td><td class="rw-price">₹26,995</td></tr>
-          <tr><td>PROVOGUE — Premium Day &amp; Date Analog Watch</td><td class="rw-price">₹3,190</td></tr>
-          <tr><td>Fastrack — Tees Analog Watch</td><td class="rw-price">₹9,450</td></tr>
-        </tbody>
-      </table>
-      <p id="noResults" class="rw-no-results d-none">No watches found matching your search.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SPOTLIGHT: ROLEX -->
-<section class="rw-spotlight">
-  <div class="container-fluid px-0">
-    <div class="row g-0">
-      <div class="col-md-6 rw-spotlight-media">
-        <div id="demo2" class="carousel slide h-100" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-          </div>
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-              <img src="assest/images/Rolex_Submariner.jpeg" class="rw-spotlight-img" alt="Rolex Submariner">
+        <div class="rw-flip-card">
+          <div class="rw-flip-inner">
+            <div class="rw-flip-front">
+              <span class="rw-flip-icon">◈</span>
+              <h5 class="rw-flip-title">The Premium Shines</h5>
+              <p class="rw-flip-hint">Click to know more</p>
             </div>
-            <div class="carousel-item h-100">
-              <img src="assest/images/rolex_watch_8.jpg" class="rw-spotlight-img" alt="Rolex Watch">
+            <div class="rw-flip-back">
+              <h5 class="rw-flip-back-title">The Premium Shines</h5>
+              <p>Never miss the opportunity to shine. Discover new technology in tradition and high elegance — where
+                every second hand sweep is a statement.</p>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
         </div>
-      </div>
-      <div class="col-md-6 rw-spotlight-content">
-        <p class="rw-eyebrow rw-eyebrow-gold">Icon of the Year</p>
-        <h2 class="rw-spotlight-title">Rolex Submariner</h2>
-        <div class="rw-gold-rule"></div>
-        <p class="rw-spotlight-text">Widely regarded as one of the premier luxury watch brands globally, Rolex has a reputation for luxury and exclusivity. The Submariner is an iconic dive watch — water-resistant to 300m, featuring a unidirectional bezel and the legendary Oyster bracelet.</p>
-        <p class="rw-spotlight-text">Whether worn for a dive or a formal event, the Submariner's combination of style, durability, and functionality makes it a must-have for any watch enthusiast.</p>
-        <a href="https://www.rolex.com" target="_blank" class="rw-gold-btn">Explore Rolex</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT US -->
-<section class="rw-section" id="aboutus">
-  <div class="container">
-    <div class="rw-section-header">
-      <p class="rw-eyebrow">Who We Are</p>
-      <h2 class="rw-section-title">About Rudyard Watches</h2>
-    </div>
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:20px;">
-          Rudyard Watches was founded with one belief — <strong>a great watch is not bought, it is chosen.</strong>
-          We are a curated men's watch destination bringing together the finest timepieces from global and Indian brands, all under one roof.
-        </p>
-        <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:20px;">
-          From the precision engineering of Rolex to the bold smart-tech of boAt, we source watches that match every personality, occasion, and budget. Our team personally tests and reviews every model before it earns a place in our collection.
-        </p>
-        <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:32px;">
-          Based in Jaipur, Rajasthan — we serve watch enthusiasts across India, with a promise of authenticity, transparency, and timeless style.
-        </p>
-        <div class="row g-3 text-center" style="max-width:420px;">
-          <div class="col-4">
-            <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
-              <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">50+</h3>
-              <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">Brands</p>
+        <div class="rw-flip-card">
+          <div class="rw-flip-inner">
+            <div class="rw-flip-front">
+              <span class="rw-flip-icon">◈</span>
+              <h5 class="rw-flip-title">The Aesthetic Collection</h5>
+              <p class="rw-flip-hint">Click to know more</p>
             </div>
-          </div>
-          <div class="col-4">
-            <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
-              <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">200+</h3>
-              <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">Models</p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
-              <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">5K+</h3>
-              <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">Customers</p>
+            <div class="rw-flip-back">
+              <h5 class="rw-flip-back-title">The Aesthetic Collection</h5>
+              <p>From color palette and bracelet design to the often-overlooked element of proportion — every detail is
+                an intentional design decision that makes a watch truly yours.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="row g-3">
-          <div class="col-12">
-            <div style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
-              <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
-                <i class="fa fa-certificate" style="color:#c9a84c;font-size:22px;"></i>
-              </div>
-              <div>
-                <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">100% Authentic</h6>
-                <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">Every watch in our collection is sourced directly from authorised dealers and verified for authenticity before listing.</p>
+    </div>
+  </section>
+
+  <!-- MASTERPIECES / PRODUCT CARDS -->
+  <section class="rw-section rw-section-dark" id="collection">
+    <div class="container">
+      <div class="rw-section-header">
+        <p class="rw-eyebrow rw-eyebrow-gold">Featured Pieces</p>
+        <h2 class="rw-section-title rw-title-light">Masterpieces to Explore</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="rw-product-card">
+            <div class="rw-product-img-wrap">
+              <img src="assest/images/titan-black.jpg" alt="Titan Watch">
+              <div class="rw-product-overlay">
+                <a href="https://www.titan.co.in" target="_blank" class="rw-overlay-btn">View Details</a>
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
-              <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
-                <i class="fa fa-shield" style="color:#c9a84c;font-size:22px;"></i>
-              </div>
-              <div>
-                <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">Warranty Assured</h6>
-                <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">All purchases come with full manufacturer warranty, with our dedicated support team available for any after-sale needs.</p>
-              </div>
+            <div class="rw-product-body">
+              <p class="rw-product-brand">Titan</p>
+              <h5 class="rw-product-name">Octane Chronograph</h5>
+              <p class="rw-product-desc">Best Product Design award by Red Dot 2014. Bold, precise, built for men who
+                lead.</p>
+              <a href="https://www.titan.co.in" target="_blank" class="rw-product-link">Info <i
+                  class="fa fa-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-12">
-            <div style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
-              <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
-                <i class="fa fa-map-marker" style="color:#c9a84c;font-size:22px;"></i>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="rw-product-card">
+            <div class="rw-product-img-wrap">
+              <img src="assest/images/rolex-white.jpg" alt="Rolex Watch">
+              <div class="rw-product-overlay">
+                <a href="https://www.rolex.com" target="_blank" class="rw-overlay-btn">View Details</a>
               </div>
-              <div>
-                <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">Based in Jaipur</h6>
-                <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">Proudly rooted in Rajasthan, serving customers across India with fast shipping and a love for fine craftsmanship.</p>
+            </div>
+            <div class="rw-product-body">
+              <p class="rw-product-brand">Rolex</p>
+              <h5 class="rw-product-name">SEA-Dweller Oyster</h5>
+              <p class="rw-product-desc">43mm Oystersteel M126600-0002. Three watch lines — Oyster Perpetual,
+                Professional and Cellini.</p>
+              <a href="https://www.rolex.com" target="_blank" class="rw-product-link">Info <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="rw-product-card">
+            <div class="rw-product-img-wrap">
+              <img src="assest/images/boat-black.jpg" alt="boAt Watch">
+              <div class="rw-product-overlay">
+                <a href="https://www.boat-lifestyle.com" target="_blank" class="rw-overlay-btn">View Details</a>
+              </div>
+            </div>
+            <div class="rw-product-body">
+              <p class="rw-product-brand">boAt</p>
+              <h5 class="rw-product-name">Enigma Z30 Smart</h5>
+              <p class="rw-product-desc">1.39" TFT Display, Bluetooth Calling, 100+ Watch Faces, metal body. Style meets
+                tech.</p>
+              <a href="https://www.boat-lifestyle.com" target="_blank" class="rw-product-link">Info <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="rw-product-card">
+            <div class="rw-product-img-wrap">
+              <img src="assest/images/fastrack-white.jpg" alt="Fastrack Watch">
+              <div class="rw-product-overlay">
+                <a href="https://www.fastrack.in" target="_blank" class="rw-overlay-btn">View Details</a>
+              </div>
+            </div>
+            <div class="rw-product-body">
+              <p class="rw-product-brand">Fastrack</p>
+              <h5 class="rw-product-name">Minimalist Analog</h5>
+              <p class="rw-product-desc">Chronograph, Moon Phase, stainless steel, waterproof luminous hands. Built for
+                the bold.</p>
+              <a href="https://www.fastrack.in" target="_blank" class="rw-product-link">Info <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE TABLE -->
+  <section class="rw-section" id="pricing">
+    <div class="container">
+      <div class="rw-section-header">
+        <p class="rw-eyebrow">Transparent Pricing</p>
+        <h2 class="rw-section-title">Watches for Men — Price List</h2>
+      </div>
+      <p class="rw-section-lead">The right timepiece at the right price. Browse our curated list and find the one that
+        suits your wrist and wallet.</p>
+      <div class="rw-search-wrap">
+        <i class="fa fa-search rw-search-icon"></i>
+        <input type="text" id="watchSearch" class="rw-search-input" placeholder="Search by brand or model…">
+      </div>
+      <div class="table-responsive">
+        <table class="table rw-table" id="priceTable">
+          <thead>
+            <tr>
+              <th>Watch Model</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="priceTableBody">
+            <tr>
+              <td>DUCATI CORSE — Analog Watch DTWGC2019010</td>
+              <td class="rw-price">₹35,698</td>
+            </tr>
+            <tr>
+              <td>LIMESTONE — Day &amp; Date Steel Strap Quartz Analog</td>
+              <td class="rw-price">₹3,000</td>
+            </tr>
+            <tr>
+              <td>FOSSIL — GRANT SPORT Analog Watch</td>
+              <td class="rw-price">₹4,699</td>
+            </tr>
+            <tr>
+              <td>Titan — Edge Ceramic Quartz Glossy Green Dial</td>
+              <td class="rw-price">₹31,495</td>
+            </tr>
+            <tr>
+              <td>TIMEX — Classic Analog Watch</td>
+              <td class="rw-price">₹5,790</td>
+            </tr>
+            <tr>
+              <td>Titan — Gents Karishma Analog Watch</td>
+              <td class="rw-price">₹3,445</td>
+            </tr>
+            <tr>
+              <td>Fastrack — Minimalists Analog Watch</td>
+              <td class="rw-price">₹8,950</td>
+            </tr>
+            <tr>
+              <td>EMPORIO ARMANI — Diver Analog Watch</td>
+              <td class="rw-price">₹26,995</td>
+            </tr>
+            <tr>
+              <td>PROVOGUE — Premium Day &amp; Date Analog Watch</td>
+              <td class="rw-price">₹3,190</td>
+            </tr>
+            <tr>
+              <td>Fastrack — Tees Analog Watch</td>
+              <td class="rw-price">₹9,450</td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="noResults" class="rw-no-results d-none">No watches found matching your search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT: ROLEX -->
+  <section class="rw-spotlight">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-md-6 rw-spotlight-media">
+          <div id="demo2" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="assest/images/Rolex_Submariner.jpeg" class="rw-spotlight-img" alt="Rolex Submariner">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="assest/images/rolex_watch_8.jpg" class="rw-spotlight-img" alt="Rolex Watch">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 rw-spotlight-content">
+          <p class="rw-eyebrow rw-eyebrow-gold">Icon of the Year</p>
+          <h2 class="rw-spotlight-title">Rolex Submariner</h2>
+          <div class="rw-gold-rule"></div>
+          <p class="rw-spotlight-text">Widely regarded as one of the premier luxury watch brands globally, Rolex has a
+            reputation for luxury and exclusivity. The Submariner is an iconic dive watch — water-resistant to 300m,
+            featuring a unidirectional bezel and the legendary Oyster bracelet.</p>
+          <p class="rw-spotlight-text">Whether worn for a dive or a formal event, the Submariner's combination of style,
+            durability, and functionality makes it a must-have for any watch enthusiast.</p>
+          <a href="https://www.rolex.com" target="_blank" class="rw-gold-btn">Explore Rolex</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="rw-section" id="aboutus">
+    <div class="container">
+      <div class="rw-section-header">
+        <p class="rw-eyebrow">Who We Are</p>
+        <h2 class="rw-section-title">About Rudyard Watches</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:20px;">
+            Rudyard Watches was founded with one belief — <strong>a great watch is not bought, it is chosen.</strong>
+            We are a curated men's watch destination bringing together the finest timepieces from global and Indian
+            brands, all under one roof.
+          </p>
+          <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:20px;">
+            From the precision engineering of Rolex to the bold smart-tech of boAt, we source watches that match every
+            personality, occasion, and budget. Our team personally tests and reviews every model before it earns a place
+            in our collection.
+          </p>
+          <p style="font-size:17px;color:#444;line-height:1.9;margin-bottom:32px;">
+            Based in Jaipur, Rajasthan — we serve watch enthusiasts across India, with a promise of authenticity,
+            transparency, and timeless style.
+          </p>
+          <div class="row g-3 text-center" style="max-width:420px;">
+            <div class="col-4">
+              <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
+                <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">50+</h3>
+                <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">
+                  Brands</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
+                <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">200+</h3>
+                <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">
+                  Models</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div style="background:#0d1b2a;border-radius:10px;padding:20px 10px;">
+                <h3 style="font-family:'Playfair Display',serif;color:#c9a84c;margin:0;font-size:1.8rem;">5K+</h3>
+                <p style="color:#9aabb8;font-size:12px;margin:4px 0 0;letter-spacing:0.08em;text-transform:uppercase;">
+                  Customers</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="rw-footer">
-  <div class="container-fluid px-5 pt-5 pb-3">
-    <div class="row gy-4">
-      <div class="col-lg-3 col-md-6">
-        <img src="assest/images/images-removebg-preview.png" height="60" alt="Rudyard Logo" class="mb-3 rw-footer-logo">
-        <p class="rw-footer-quote">"The watch is the first thing you put on in the morning and the last thing you take off at night."</p>
-        <div class="rw-social-icons mt-3">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-youtube-play"></i></a>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-12">
+              <div
+                style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;"
+                onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'"
+                onmouseout="this.style.boxShadow='none'">
+                <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
+                  <i class="fa fa-certificate" style="color:#c9a84c;font-size:22px;"></i>
+                </div>
+                <div>
+                  <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">100%
+                    Authentic</h6>
+                  <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">Every watch in our collection is
+                    sourced directly from authorised dealers and verified for authenticity before listing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;"
+                onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'"
+                onmouseout="this.style.boxShadow='none'">
+                <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
+                  <i class="fa fa-shield" style="color:#c9a84c;font-size:22px;"></i>
+                </div>
+                <div>
+                  <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">
+                    Warranty Assured</h6>
+                  <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">All purchases come with full
+                    manufacturer warranty, with our dedicated support team available for any after-sale needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                style="background:#fff;border:1px solid #ece8df;border-radius:10px;padding:24px;display:flex;gap:18px;align-items:flex-start;transition:box-shadow 0.3s;"
+                onmouseover="this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'"
+                onmouseout="this.style.boxShadow='none'">
+                <div style="background:#0d1b2a;border-radius:8px;padding:12px;flex-shrink:0;">
+                  <i class="fa fa-map-marker" style="color:#c9a84c;font-size:22px;"></i>
+                </div>
+                <div>
+                  <h6 style="font-family:'Playfair Display',serif;font-weight:700;color:#0d1b2a;margin-bottom:6px;">
+                    Based in Jaipur</h6>
+                  <p style="font-size:14px;color:#777;margin:0;line-height:1.7;">Proudly rooted in Rajasthan, serving
+                    customers across India with fast shipping and a love for fine craftsmanship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-6">
-        <h6 class="rw-footer-heading">Collection</h6>
-        <ul class="rw-footer-links">
-          <li><a href="https://www.titan.co.in/titan-automatics.html" target="_blank">Titan Automatics</a></li>
-          <li><a href="https://www.rolex.com/watches/find-rolex/man" target="_blank">Rolex Prime</a></li>
-          <li><a href="https://www.boat-lifestyle.com/collections/smart-watches" target="_blank">boAt Smart</a></li>
-          <li><a href="https://www.fastrack.in/shop/reflex-smart-watches" target="_blank">Fastrack Wrist</a></li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="rw-footer">
+    <div class="container-fluid px-5 pt-5 pb-3">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6">
+          <img src="assest/images/images-removebg-preview.png" height="60" alt="Rudyard Logo"
+            class="mb-3 rw-footer-logo">
+          <p class="rw-footer-quote">"The watch is the first thing you put on in the morning and the last thing you take
+            off at night."</p>
+          <div class="rw-social-icons mt-3">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="rw-footer-heading">Collection</h6>
+          <ul class="rw-footer-links">
+            <li><a href="https://www.titan.co.in/titan-automatics.html" target="_blank">Titan Automatics</a></li>
+            <li><a href="https://www.rolex.com/watches/find-rolex/man" target="_blank">Rolex Prime</a></li>
+            <li><a href="https://www.boat-lifestyle.com/collections/smart-watches" target="_blank">boAt Smart</a></li>
+            <li><a href="https://www.fastrack.in/shop/reflex-smart-watches" target="_blank">Fastrack Wrist</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="rw-footer-heading">Customer Service</h6>
+          <ul class="rw-footer-links">
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="rw-footer-heading">Policies</h6>
+          <ul class="rw-footer-links">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6 class="rw-footer-heading">Contact Us</h6>
+          <ul class="rw-footer-links">
+            <li><a href="tel:+919352100428"><i class="fa fa-phone me-2"></i>+91 93521 00428</a></li>
+            <li><a href="mailto:pratapsinghr782@gmail.com"><i class="fa fa-envelope me-2"></i>Send us a mail</a></li>
+          </ul>
+          <h6 class="rw-footer-heading mt-3">About Us</h6>
+          <ul class="rw-footer-links">
+            <li><a href="#">Brand Protection</a></li>
+            <li><a href="#">Corporate</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-6">
-        <h6 class="rw-footer-heading">Customer Service</h6>
-        <ul class="rw-footer-links">
-          <li><a href="#">Payment Options</a></li>
-          <li><a href="#">Track Order</a></li>
-          <li><a href="#">Find a Store</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-6 col-6">
-        <h6 class="rw-footer-heading">Policies</h6>
-        <ul class="rw-footer-links">
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Shipping &amp; Returns</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-6">
-        <h6 class="rw-footer-heading">Contact Us</h6>
-        <ul class="rw-footer-links">
-          <li><a href="tel:+919352100428"><i class="fa fa-phone me-2"></i>+91 93521 00428</a></li>
-          <li><a href="mailto:pratapsinghr782@gmail.com"><i class="fa fa-envelope me-2"></i>Send us a mail</a></li>
-        </ul>
-        <h6 class="rw-footer-heading mt-3">About Us</h6>
-        <ul class="rw-footer-links">
-          <li><a href="#">Brand Protection</a></li>
-          <li><a href="#">Corporate</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
+      <div class="rw-footer-bottom">
+        <p>© 2024 Rudyard Watches. All rights reserved.</p>
       </div>
     </div>
-    <div class="rw-footer-bottom">
-      <p>© 2024 Rudyard Watches. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<!-- style.js (form validation + toast) -->
-<script src="assest/js/style.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- style.js (form validation + toast) -->
+  <script src="assest/js/style.js"></script>
 
-<!-- ALL inline scripts here — runs AFTER full HTML is loaded -->
-<script>
+  <!-- ALL inline scripts here — runs AFTER full HTML is loaded -->
+  <script>
 
-  // ── FLIP CARDS ─────────────────────────────────────────
-  // FIX: old accordion code removed — it was crashing JS here
-  // causing flip cards to never get their listener attached
-  document.querySelectorAll('.rw-flip-card').forEach(function(card) {
-    card.addEventListener('click', function() {
-      card.classList.toggle('flipped');
+    // ── FLIP CARDS ─────────────────────────────────────────
+    // FIX: old accordion code removed — it was crashing JS here
+    // causing flip cards to never get their listener attached
+    document.querySelectorAll('.rw-flip-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        card.classList.toggle('flipped');
+      });
     });
-  });
 
-  // ── PRICE TABLE SEARCH ──────────────────────────────────
-  document.getElementById('watchSearch').addEventListener('input', function() {
-    var q = this.value.toLowerCase();
-    var rows = document.querySelectorAll('#priceTableBody tr');
-    var count = 0;
-    rows.forEach(function(row) {
-      var match = row.textContent.toLowerCase().includes(q);
-      row.style.display = match ? '' : 'none';
-      if (match) count++;
+    // ── PRICE TABLE SEARCH ──────────────────────────────────
+    document.getElementById('watchSearch').addEventListener('input', function () {
+      var q = this.value.toLowerCase();
+      var rows = document.querySelectorAll('#priceTableBody tr');
+      var count = 0;
+      rows.forEach(function (row) {
+        var match = row.textContent.toLowerCase().includes(q);
+        row.style.display = match ? '' : 'none';
+        if (match) count++;
+      });
+      document.getElementById('noResults').classList.toggle('d-none', count > 0);
     });
-    document.getElementById('noResults').classList.toggle('d-none', count > 0);
-  });
 
-  // ── SCROLL REVEAL ───────────────────────────────────────
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) e.target.classList.add('rw-visible');
+    // ── SCROLL REVEAL ───────────────────────────────────────
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) e.target.classList.add('rw-visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.rw-product-card, .rw-flip-card, .rw-section-header').forEach(function (el) {
+      el.classList.add('rw-fade-up');
+      observer.observe(el);
     });
-  }, { threshold: 0.1 });
 
-  document.querySelectorAll('.rw-product-card, .rw-flip-card, .rw-section-header').forEach(function(el) {
-    el.classList.add('rw-fade-up');
-    observer.observe(el);
-  });
+    // ── SUCCESS TOAST after registration redirect ───────────
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var isRegistered = params.get('registered') === '1';
+      var isLoggedIn = params.get('login') === '1';
 
-  // ── SUCCESS TOAST after registration redirect ───────────
-(function () {
-  var params = new URLSearchParams(window.location.search);
-  var isRegistered = params.get('registered') === '1';
-  var isLoggedIn    = params.get('login') === '1';
-
-  if (isRegistered || isLoggedIn) {
-    window.addEventListener('load', function () {
-      var toast = document.createElement('div');
-      toast.style.cssText = 'position:fixed;top:24px;right:24px;z-index:9999;background:#4caf87;color:#fff;padding:16px 24px;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;font-weight:500;box-shadow:0 8px 30px rgba(0,0,0,0.2);';
-      toast.textContent = isRegistered
-        ? '✓ Registration successful! Welcome to Rudyard Watches.'
-        : '✓ Login successful! Welcome back.';
-      document.body.appendChild(toast);
-      setTimeout(function () { toast.remove(); }, 5000);
-      window.history.replaceState({}, '', 'index.html');
-    });
-  }
-})();
-</script>
+      if (isRegistered || isLoggedIn) {
+        window.addEventListener('load', function () {
+          var toast = document.createElement('div');
+          toast.style.cssText = 'position:fixed;top:24px;right:24px;z-index:9999;background:#4caf87;color:#fff;padding:16px 24px;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;font-weight:500;box-shadow:0 8px 30px rgba(0,0,0,0.2);';
+          toast.textContent = isRegistered
+            ? '✓ Registration successful! Welcome to Rudyard Watches.'
+            : '✓ Login successful! Welcome back.';
+          document.body.appendChild(toast);
+          setTimeout(function () { toast.remove(); }, 5000);
+          window.history.replaceState({}, '', 'index.html');
+        });
+      }
+    })();
+  </script>
 </body>
+
 </html>
